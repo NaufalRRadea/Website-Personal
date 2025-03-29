@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #4d43dc;
+  --primary-color-dark: #041e7d;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 0 5px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+ 
+.filter-btn:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Portfolio Styling */
+.portfolio {
+  text-align: center;
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+portfolio-section {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.portfolio-title {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.portfolio-description {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  padding: 0 40px;
+  line-height: 1.6;
+}
+
+.grid-3.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.portfolio-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 325px; /* Pastikan ukuran tinggi card tetap */
+  display: flex; /* Agar bisa mengatur posisi konten */
+  flex-direction: column;
+  justify-content: space-between; /* Konten tersebar dengan jarak */
+}
+
+.portfolio-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-image {
+  position: relative;
+  overflow: hidden; /* new nih bos */
+  border-radius: 12px;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay-work {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-image:hover .overlay-work {
+  opacity: 1;
+}
+
+.work-icon {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.work-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #4d43dc;
+}
+
+.work-icon:hover {
+  background: #4d43dc;
+}
+
+.work-icon:hover svg {
+  color: white;
+}
+
+.portfolio-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin: 1rem 0 0.5rem;
+  margin-bottom: auto;
+}
+
+.portfolio-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.portfolio-publisher,
+.portfolio-date {
+  font-size: 0.65rem; /* Ukuran teks */
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-publisher i,
+.portfolio-date i {
+  font-size: 1rem; /* Ukuran ikon seragam */
+  margin-right: 5px; /* Jarak ikon ke teks */
+  color: #7158e2; /* Warna ikon */
+}
+
+.publisher-text {
+  line-height: 1.2; /* Spasi antar baris */
+  text-align: left;
+}
+
+
+/* Projects Styling 
+.projects-section {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.projects-title {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.projects-description {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  padding: 0 40px;
+  line-height: 1.6;
+}
+
+.grid-3.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 325px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px; 
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.project-card h3 {
+  font-size: 0.9rem; 
+  font-weight: bold;
+  color: var(--text-dark);
+  margin: 1rem 0 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.65rem; 
+  color: var(--text-light);
+} 
+
+.filter-buttons {
+    margin-bottom: 30px;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 5px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .filter-btn.active, 
+  .filter-btn:hover {
+    background: #6c63ff;
+    color: white;
+    transform: translateY(-3px);
+  } */
+  
