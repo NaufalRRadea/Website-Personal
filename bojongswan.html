@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" /> <!-- Main CSS for global styling -->
     <link rel="stylesheet" href="bojongswan.css" /> <!-- Project-specific CSS -->
+    <link rel="icon" href="assets/images/Photo Prof 1.0.png" type="image/png" />
     <title>Bojongswan Coffee Inventory & Financial Management System</title>
 </head>
 <body>
@@ -51,7 +52,7 @@
                 <div class="col-lg-9 col-md-8 col-12">
                     <div id="overview" class="content-section">
                         <h3 id="project-headline" class="headline">Inventory & Finance System for Bojongswan Coffee</h3>
-                        <img src="bjc.jpg" class="img-fluid custom-image" id="bjc-image" alt="Project">
+                        <img src="assets/images/bjc.jpg" class="img-fluid custom-image" id="bjc-image" alt="Project">
                         <small id="bjc-caption" class="image-caption">Bojongswan Coffeeshop Illustration</small>
                         <h4 class="fw-bold text-primary">Project Overview</h4>
                         <p>Bojongswan Coffee is a small but rapidly growing business that faces several challenges in managing its inventory and finances effectively. These challenges include difficulties in tracking stock, recording sales transactions, and generating accurate financial reports.
@@ -112,7 +113,7 @@
                             <li>
                                 <strong>Entity and Attributes</strong>
                                 <div class="text-center">
-                                    <img src="7.png" alt="Entity and Attributes" class="img-fluid mt-3">
+                                    <img src="assets/images/7.png" alt="Entity and Attributes" class="img-fluid mt-3">
                                     <p class="entity-attributes-bridging">
                                         To effectively manage inventory and finances, it is crucial to define the key entities and their attributes within the system. Each entity represents a fundamental component of the business process, while its attributes capture specific details necessary for accurate tracking and reporting. 
                                         Below is an overview of the entities and attributes designed for the Inventory and Finance System for Bojongswan Coffee.
@@ -136,7 +137,7 @@
                             <li>
                                 <strong>Constraints</strong>
                                 <div class="text-center">
-                                    <img src="8.png" alt="Constraints Diagram" class="img-fluid mt-3">
+                                    <img src="assets/images/8.png" alt="Constraints Diagram" class="img-fluid mt-3">
                                     <p class="constraint-bridging">
                                         Constraints help define the rules governing relationships between entities in a database. For example, in the relationship between the <strong>User</strong> and <strong>SalesTransaction</strong> entities, one <strong>User</strong> may process many <strong>SalesTransaction</strong> records. This relationship has a cardinality of <strong>1:N</strong>, meaning "one-to-many," and a participation of <strong>Total:Total</strong>, indicating that every <strong>User</strong> must participate in at least one <strong>SalesTransaction</strong> and vice versa.
                                     </p>
@@ -151,7 +152,7 @@
                             <li>
                                 <strong>ERD Bojongswan Coffee App</strong>
                                 <div class="text-center">
-                                    <img src="9.png" alt="ERD Bojongswan Coffee App" class="img-fluid mt-3">
+                                    <img src="assets/images/9.png" alt="ERD Bojongswan Coffee App" class="img-fluid mt-3">
                                     <p class="erd-description">
                                         The Entity-Relationship Diagram (ERD) for the Bojongswan Coffee App illustrates the relationships between key entities in the inventory and financial management system. It highlights how data is structured, interconnected, and supports seamless operations. 
                                         Here we define the entities within our ERD design
@@ -190,7 +191,7 @@
                         <h4 class="fw-bold text-primary">RDBMS Design</h4>
                         <ol class="project-key-points"></ol>
                         <div class="text-center">
-                            <img src="10.png" alt="rdbms" class="img-fluid mt-3">
+                            <img src="assets/images/10.png" alt="rdbms" class="img-fluid mt-3">
                         </div>
                         <p class="rdbms-description">
                             The Relational Database Management System (RDBMS) design for the Bojongswan Coffee App establishes a structured framework for organizing and managing data efficiently.
@@ -231,7 +232,7 @@
                             <li>
                                 <strong>User Table</strong>
                                 <div class="text-center">
-                                    <img src="12.png" alt="User Table" class="img-fluid mt-3">
+                                    <img src="assets/images/11.png" alt="User Table" class="img-fluid mt-3">
                                     <p class="ddl-user-table">
                                         In the Bojongswan Coffee App, the User table is defined using the <code>CREATE TABLE</code>command in SQL. The table is designed to store essential user information such as UserID, Name, and Email while ensuring data integrity through the use of constraints like the Primary Key.
                                     </p>
@@ -245,7 +246,7 @@
                             <li>
                                 <strong>Customer Table</strong>
                                 <div class="text-center">
-                                    <img src="13.png" alt="ddl1" class="img-fluid mt-3">
+                                    <img src="assets/images/13.png" alt="ddl1" class="img-fluid mt-3">
                                     <p class="customer-ddl">
                                         The Customer table is defined using the <code>CREATE TABLE</code> command in SQL. This table is designed to capture essential customer information, including CustomerID, Name, and ContactInfo, while ensuring data consistency through the application of constraints like the Primary Key.
                                     </p>
@@ -259,8 +260,8 @@
                             <li>
                                 <strong>Order Detail Table</strong>
                                 <div class="text-center">
-                                    <img src="14.png" alt="ddl1" class="img-fluid mt-3">
-                                    <img src="15.png" alt="ddl1" class="img-fluid mt-3">
+                                    <img src="assets/images/14.png" alt="ddl1" class="img-fluid mt-3">
+                                    <img src="assets/images/15.png" alt="ddl1" class="img-fluid mt-3">
                                     <p class="orderdetail-ddl">
                                         The<code>OrderDetail</code> table in the Bojongswan Coffee App is designed to store details about items in individual sales transactions. This table captures critical information such as product details, 
                                         quantity, and price, ensuring accurate and structured data management.
@@ -284,8 +285,8 @@
                             <li>
                                 <strong>Sales Transaction Table</strong>
                                 <div class="text-center">
-                                    <img src="16.png" alt="ddl1" class="img-fluid mt-3">
-                                    <img src="17.png" alt="ddl1" class="img-fluid mt-3">
+                                    <img src="assets/images/16.png" alt="ddl1" class="img-fluid mt-3">
+                                    <img src="assets/images/17.png" alt="ddl1" class="img-fluid mt-3">
                                     <p class="salestr-ddl">
                                         The SalesTransaction Table is created using the <code>CREATE TABLE</code> SQL command to manage transaction records effectively. 
                                         This table includes attributes such as TransactionID, Date, and TotalAmount, ensuring seamless tracking and organization of all sales-related data.
@@ -313,7 +314,7 @@
                             <li>
                                 <strong>User Database</strong>
                                 <div class="text-center">
-                                    <img src="18.png" alt="dml1" class="img-fluid mt-3">
+                                    <img src="assets/images/18.png" alt="dml1" class="img-fluid mt-3">
                                     <p class="dml-user">
                                         The User Database serves as the foundation for managing data related to stakeholders in the Bojongswan Coffee App, such as staff members. By utilizing the <code>INSERT INTO</code> query, user records are added with attributes like UserID, Name, and Email. 
                                         This ensures efficient data management for operations such as maintaining stakeholder records, tracking sales transactions, and enabling role-based system access.
@@ -325,7 +326,7 @@
                             <li>
                                 <strong>Customer Database</strong>
                                 <div class="text-center">
-                                    <img src="19.png" alt="dml1" class="img-fluid mt-3">
+                                    <img src="assets/images/19.png" alt="dml1" class="img-fluid mt-3">
                                     <p class="customer-dml">
                                         The Customer table in the database is populated using the <code>INSERT INTO</code> command alongside the <code>VALUES</code> clause to record key customer information, such as CustomerID, Name, and ContactInfo. This functionality ensures that every customer visiting the coffee shop is logged into the system, enabling a comprehensive and structured database of customer records. 
                                         Recording customer data offers significant benefits, such as improving personalized services, tracking customer visits and purchases, and supporting targeted marketing strategies. Additionally, it helps the coffee shop maintain a robust customer relationship management system, fostering loyalty and ensuring operational efficiency in catering to customer needs.
@@ -336,7 +337,7 @@
                             <li>
                                 <strong>Order Detail Database</strong>
                                 <div class="text-center">
-                                    <img src="20.png" alt="dml1" class="img-fluid mt-3">
+                                    <img src="assets/images/20.png" alt="dml1" class="img-fluid mt-3">
                                     <p class="orderdetail-dml">
                                         The OrderDetail table is populated using the <code>INSERT INTO</code> statement combined with the <code>VALUES</code> clause, allowing the addition of detailed information for each order, such as OrderID, ProductName, Quantity, Price, and the corresponding TransactionID. This enables the system to record every item included in a customer's order and associate it with a specific transaction. 
                                         The implications of this process are significant for managing inventory, calculating revenue, and tracking sales performance. Furthermore, this data provides the foundation for analyzing <span class="bold-text-oddml">customer preferences</span>, such as identifying the most popular menu items based on order frequency. This insight can guide decisions for inventory stocking, promotional activities, and menu adjustments to align with customer demand.
@@ -347,7 +348,7 @@
                             <li>
                                 <strong>Sales Transaction Database</strong>
                                 <div class="text-center">
-                                    <img src="21.png" alt="dml1" class="img-fluid mt-3">
+                                    <img src="assets/images/21.png" alt="dml1" class="img-fluid mt-3">
                                     <p class="salestr-dml">
                                         The SalesTransaction table is a vital component of the database that records detailed information about each transaction. Using the <code>INSERT INTO</code> statement along with the <code>VALUES</code> clause, capturing attributes such as TransactionID, Date, TotalAmount, UserID, and CustomerID. This structure ensures that every transaction is uniquely identified and provides a comprehensive record of sales activities. 
                                         The inclusion of UserID links each transaction to the staff member responsible for recording it, while CustomerID associates the transaction with the corresponding customer. This setup facilitates accountability and enables a clear audit trail for every sale. Additionally, analyzing the SalesTransaction data allows for insights into <span class="bold-text-stdml"> sales trends, peak business period, and customer purchasing behavior</span>,
@@ -368,56 +369,56 @@
                             <li>
                                 <strong>SELECT function for specific purpose #1</strong>
                                 <div class="text-center">
-                                    <img src="24.png" class="img-fluid custom-image" id="s1-image" alt="sqlquestion">
+                                    <img src="assets/images/24.png" class="img-fluid custom-image" id="s1-image" alt="sqlquestion">
                                     <p class="sql-1">
                                         <strong>Question:</strong>What are the name and email address of the user with ID 150111?
                                     </p>
                                     <p class="sql-1-1">
                                         <strong>Answer:</strong> <code>SELECT</code> Name, Email <code>FROM</code> User <code>WHERE</code> UserID = 150111;
                                     </p>
-                                    <img src="25.png" class="img-fluid custom-image" id="s1-1-image" alt="sqlquestion">
+                                    <img src="assets/images/25.png" class="img-fluid custom-image" id="s1-1-image" alt="sqlquestion">
                                 </div>
                             </li>
 
                             <li>
                                 <strong>SELECT function for specific purpose #2</strong>
                                 <div class="text-center">
-                                    <img src="26.png" class="img-fluid custom-image" id="s1-image" alt="sqlquestion">
+                                    <img src="assets/images/26.png" class="img-fluid custom-image" id="s1-image" alt="sqlquestion">
                                     <p class="sql-1">
                                         <strong>Question:</strong>What products and how many of each were ordered in transaction number 1?
                                     </p>
                                     <p class="sql-1-1">
                                         <strong>Answer:</strong> <code>SELECT</code> ProductName, Quantity <code>FROM</code> orderdetail <code>WHERE</code> TransactionID = 1;
                                     </p>
-                                    <img src="27.png" class="img-fluid custom-image" id="s1-1-image" alt="sqlquestion">
+                                    <img src="assets/images/27.png" class="img-fluid custom-image" id="s1-1-image" alt="sqlquestion">
                                 </div>
                             </li>
 
                             <li>
                                 <strong>UPDATE Function #1</strong>
                                 <div class="text-center">
-                                    <img src="24.png" class="img-fluid custom-image" id="s1-image" alt="sqlquestion">
+                                    <img src="assets/images/24.png" class="img-fluid custom-image" id="s1-image" alt="sqlquestion">
                                     <p class="sql-1">
                                         <strong>Question:</strong>Update the email address for a user with ID 150111 in a database to klopp@yahoo.com
                                     </p>
                                     <p class="sql-1-1">
                                         <strong>Answer:</strong> <code>UPDATE</code> User <code>SET</code> Email = 'klopp@yahoo.com' <code>WHERE</code> UserID = 150111;
                                     </p>
-                                    <img src="29.png" class="img-fluid custom-image" id="s1-1-image" alt="sqlquestion">
+                                    <img src="assets/images/29.png" class="img-fluid custom-image" id="s1-1-image" alt="sqlquestion">
                                 </div>
                             </li>
 
                             <li>
                                 <strong>UPDATE Function #2</strong>
                                 <div class="text-center">
-                                    <img src="30.png" class="img-fluid custom-image" id="s1-image" alt="sqlquestion">
+                                    <img src="assets/images/30.png" class="img-fluid custom-image" id="s1-image" alt="sqlquestion">
                                     <p class="sql-1">
                                         <strong>Question:</strong>Write an SQL statement to update the ContactInfo for the customer with CustomerID 2 to '555000'
                                     </p>
                                     <p class="sql-1-1">
                                         <strong>Answer:</strong> <code>UPDATE</code> Customer <code>SET</code> ContactInfo = '555000' <code>WHERE</code> CustomerID = 2;
                                     </p>
-                                    <img src="31.png" class="img-fluid custom-image" id="s1-1-image" alt="sqlquestion">
+                                    <img src="assets/images/31.png" class="img-fluid custom-image" id="s1-1-image" alt="sqlquestion">
                                 </div>
                             </li>
 
@@ -428,7 +429,7 @@
                         <h4 class="fw-bold text-primary">Conclusion</h4>
                         <ol class="project-key-points"></ol>
                         <div class="text-center">
-                            <img src="bjc.jpg" class="img-fluid mt-3">
+                            <img src="assets/images/bjc.jpg" class="img-fluid mt-3">
                         </div>
                         <p>The Bojongswan Coffee App is a tailored SQL-driven solution addressing key operational challenges in inventory and financial management for small businesses. 
                             By leveraging robust relational database design, the app provides a foundation for scalable, efficient, and data-driven operations. 
